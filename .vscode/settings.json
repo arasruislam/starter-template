@@ -1,0 +1,75 @@
+{
+   // 🛠 Formatting & Linting
+   "editor.formatOnSave": true,
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
+   "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "always"
+   },
+   "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+   ],
+
+   // 📄 Indentation & Tabs
+   "editor.tabSize": 2,
+   "editor.insertSpaces": true,
+   "editor.detectIndentation": false,
+
+   // 📜 Auto-Saving & Wrapping
+   "files.autoSave": "afterDelay",
+   "editor.wordWrap": "on",
+
+   // 🚀 Performance & File Exclusions
+   "files.exclude": {
+      "**/node_modules": true,
+      "**/.git": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/coverage": true,
+      "**/.next": true
+   },
+
+   // 🔍 Search & Git
+   "search.exclude": {
+      "**/node_modules": true,
+      "**/build": true,
+      "**/dist": true
+   },
+   "git.enableSmartCommit": true,
+   "git.autofetch": true,
+
+   // 🖥️ Terminal & Shell
+   "terminal.integrated.defaultProfile.linux": "bash",
+   "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+   // 🎨 Syntax Highlighting (Custom for MongoDB, Mongoose, and JavaScript)
+   "editor.tokenColorCustomizations": {
+      "textMateRules": [
+         {
+            "scope": [
+               "keyword.operator.mongodb",
+               "support.function.mongoose",
+               "variable.language"
+            ],
+            "settings": {
+               "fontStyle": "bold",
+               "foreground": "#FFD700"
+            }
+         }
+      ]
+   },
+
+   // 🔹 JavaScript & TypeScript Settings
+   "javascript.updateImportsOnFileMove.enabled": "always",
+   "typescript.updateImportsOnFileMove.enabled": "always",
+
+   // ⚡ Prettier Configuration (if not using a separate .prettierrc file)
+   "prettier.tabWidth": 2,
+  //  "prettier.singleQuote": true,
+   "prettier.trailingComma": "es5",
+   "prettier.semi": false,
+   "prettier.arrowParens": "always",
+   "postman.settings.dotenv-detection-notification-visibility": false
+}
