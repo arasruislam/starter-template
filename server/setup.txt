@@ -1,2 +1,13 @@
 After Creating "Express Server" through (npm init | yarn init)
 
+1. Create Folder Structure
+- public/temp/.gitkeep
+- create .gitignore (setup)
+- create .env file
+- Also Create Other folders
+
+2. Add to package.json
+  "type": "module", (to use modern syntax)
+
+3. Run On Terminal: yarn add -D prettier nodemon 
+  setup nodemon in package.json

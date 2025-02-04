@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "starter template",
   "main": "index.js",
+  "type": "module",
   "repository": "https://github.com/arasruislam/starter-template.git",
   "author": "Ashraful Islam",
   "scripts": {
-    "start": "nodemon index.js",
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2"
+  }
 }
