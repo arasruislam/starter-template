@@ -3,8 +3,7 @@
 ## Clone the Repository
 
 ```sh
-git clone <your-repository-url>
-cd <your-project-folder>
+git clone https://github.com/arasruislam/starter-template.git
 ```
 
 ## Create a `.env` File (Frontend)
