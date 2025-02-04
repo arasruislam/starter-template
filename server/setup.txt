@@ -11,3 +11,6 @@ After Creating "Express Server" through (npm init | yarn init)
 
 3. Run On Terminal: yarn add -D prettier nodemon 
   setup nodemon in package.json
+  setup prettier. create .prettierrc .prettierignore
+
+4. 
