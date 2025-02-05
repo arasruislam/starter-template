@@ -18,3 +18,4 @@ After Creating "Express Server" through (npm init | yarn init)
 6. setup src/db/index.js 
 7. setup src/index.js
 8. setup package.json and update "scripts"
+7. setup src/app.js
