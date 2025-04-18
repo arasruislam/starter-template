@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "streetsidesoftware.code-spell-checker",
+    "graphql.vscode-graphql",
+    "christian-kohler.npm-intellisense",
+    "pmneo.tsimporter",
+    "mikestead.dotenv",
+    "usernamehw.errorlens",
+    "ms-vscode.vscode-typescript-next",
+    "visualstudioexptteam.vscodeintellicode",
+    "dsznajder.es7-react-js-snippets",
+    "prisma.prisma",
+    "yoavbls.pretty-ts-errors"
+  ]
+}
