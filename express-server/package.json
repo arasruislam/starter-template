@@ -1,8 +1,13 @@
 {
-  "name": "express-server",
-  "version": "1.0.0",
-  "description": "Starter templete for express server backend using javascript and node",
-  "main": "index.js",
-  "author": "Ashraful Islam",
-  "license": "MIT"
+   "name": "express-server",
+   "version": "1.0.0",
+   "description": "Starter templete for express server backend using javascript and node",
+   "main": "index.js",
+   "scripts": {},
+   "keywords": [
+      "javascript",
+      "backend"
+   ],
+   "author": "Ashraful Islam",
+   "license": "MIT"
 }
