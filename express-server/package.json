@@ -1,0 +1,8 @@
+{
+  "name": "express-server",
+  "version": "1.0.0",
+  "description": "Starter templete for express server backend using javascript and node",
+  "main": "index.js",
+  "author": "Ashraful Islam",
+  "license": "MIT"
+}
