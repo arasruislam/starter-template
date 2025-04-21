@@ -5,7 +5,7 @@ dotenv.config({
    path: "./env",
 });
 
-connectDB();
+connectDB()
 
 /* 
 * first approach with async await
