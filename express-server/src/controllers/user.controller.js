@@ -1,7 +1,23 @@
 import { asyncHandler } from "../utils/asyncHandler.js";
 
 const registerUser = asyncHandler(async (req, res) => {
-   res.status(200).json({message: "ok"})
+   // get user details from frontend
+   // validation - not empty
+   // check if user already exists: username or email
+   // check for images, check for avatar and cover image
+   // upload them to cloudinary, check avatar
+   // create user object - create entry in db
+   // remove password and refresh token field from response
+   // check for user creation
+   // send response back to frontend
+
+   const { username, email, fullname, password } = req.body;
+
+   console.log(username)
+
+
+
+
 })
 
 export { registerUser };
