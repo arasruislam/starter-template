@@ -4,6 +4,7 @@ import { ApiError } from "../utils/ApiError.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { uploadOnCloudinary } from "../utils/cloudinary.js";
+import fs from "fs";
 
 const generateAccessAndRefreshToken = async (userId) => {
    try {
@@ -252,9 +253,11 @@ const changeCurrentPassword = asyncHandler(async (req, res) => {
 
 const getCurrentUser = asyncHandler(async (req, res) => {
    return res.status(200).json(
+      new ApiResponse(
          200,
-         req.user ,
+         { user: req.user },
          "User fetched successfully"
+      )
    );
 })
 
@@ -317,6 +320,9 @@ const updateUserAvatar = asyncHandler(async (req, res) => {
       throw new ApiError(404, "User not found");
    }
 
+   // remove the local file
+   fs.unlinkSync(avatarLocalPath);
+
    return res.status(200).json(
       new ApiResponse(
          200,
@@ -352,6 +358,10 @@ const updateUserCoverImage = asyncHandler(async (req, res) => {
    if (!user) {
       throw new ApiError(404, "User not found");
    }
+
+   // remove the local file
+   fs.unlinkSync(CoverImageLocalPath);
+
    return res.status(200).json(
       new ApiResponse(
          200,
